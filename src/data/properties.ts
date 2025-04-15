@@ -1,20 +1,22 @@
-interface Property {
+export interface IProperty {
   id: number;
-  type: "House" | "Apartments";
+  type: string;
   name: string;
   location: string;
   price: number;
   image: string;
+  isFavorite: boolean;
 }
 
-export const properties: Property[] = [
+export const properties: IProperty[] = [
   {
     id: 1,
     type: "House",
     name: "Palm Harbor",
     location: "2699 Green Valley, Highland Lake, FL",
     price: 3440,
-    image: "../assets/house1.jpg",
+    image: "src/assets/house1.webp",
+    isFavorite: false,
   },
   {
     id: 2,
@@ -22,7 +24,8 @@ export const properties: Property[] = [
     name: "St. Crystal",
     location: "210 US Highway, Highland Lake, FL",
     price: 6550,
-    image: "../assets/house2.jpg",
+    image: "src/assets/house2.webp",
+    isFavorite: false,
   },
   {
     id: 3,
@@ -30,30 +33,34 @@ export const properties: Property[] = [
     name: "Faulkner Ave",
     location: "909 Woodland St, Michigan, IN",
     price: 4950,
-    image: "../assets/house3.jpg",
+    image: "src/assets/house3.webp",
+    isFavorite: false,
   },
   {
     id: 4,
-    type: "Apartments",
+    type: "Apartment",
     name: "Tarpon Bay",
     location: "103 Lake Shores, Michigan, IN",
     price: 2140,
-    image: "../assets/apartment1.png",
+    image: "src/assets/apartment1.webp",
+    isFavorite: false,
   },
   {
     id: 5,
-    type: "Apartments",
+    type: "Apartment",
     name: "Cove Red",
     location: "243 Curlew Road, Palm Harbor, TX",
     price: 1450,
-    image: "../assets/apartment2.png",
+    image: "src/assets/apartment2.webp",
+    isFavorite: false,
   },
   {
     id: 6,
-    type: "Apartments",
+    type: "Apartment",
     name: "Beverly Springfield",
     location: "2821 Lake Sevilla, Palm Harbor, TX",
     price: 3850,
-    image: "../assets/apartment3.png",
+    image: "src/assets/apartment3.webp",
+    isFavorite: false,
   },
 ];
