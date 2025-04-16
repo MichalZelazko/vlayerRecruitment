@@ -1,5 +1,6 @@
 import { IProperty } from "../../data/properties";
 import FavouriteButton from "../common/FavouriteButton";
+import SparklesIcon from "./SparklesIcon";
 
 interface IPropertyCardProps {
   property: IProperty;
@@ -15,7 +16,7 @@ export default function PropertyCard({
   return (
     <div
       key={property.id}
-      className={`w-full max-w-[344px] bg-base-0 border border-base-200 rounded-lg hover:shadow-md transition-shadow duration-300 ${className}`}
+      className={`h-full w-full min-w-[280px] max-w-[344px] bg-base-0 border border-base-200 rounded-lg hover:shadow-md transition-shadow duration-300 ${className}`}
     >
       <img
         src={property.image}
@@ -25,7 +26,8 @@ export default function PropertyCard({
       <div className="p-4 sm:p-6 pt-8 flex flex-col gap-2 relative z-10">
         {hasTypeTag && (
           <>
-            <span className="absolute top-0 left-0 bg-secondary-500 text-white text-sm font-semibold px-4 py-2 rounded-t-lg rounded-r-lg -translate-y-1/2 -translate-x-2  after:content-[''] after:absolute after:bottom-0 after:left-0 after:translate-y-1/2 after:translate-x-[2.5px] after:-z-10 after:w-3 after:h-3 after:bg-secondary-500 after:rotate-45">
+            <span className="absolute inline-flex items-center gap-1 top-0 left-0 bg-secondary-500 text-white text-sm font-semibold px-4 py-2 rounded-t-lg rounded-r-lg -translate-y-1/2 -translate-x-2  after:content-[''] after:absolute after:bottom-0 after:left-0 after:translate-y-1/2 after:translate-x-[2.5px] after:-z-10 after:w-3 after:h-3 after:bg-secondary-500 after:rotate-45">
+              <SparklesIcon width={15} height={15} className="inline" />{" "}
               {property.type}
             </span>
             <div className="absolute top-0 left-0 w-3 h-3 bg-white translate-y-4.5"></div>
