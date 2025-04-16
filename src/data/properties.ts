@@ -1,3 +1,10 @@
+import house1 from "../assets/house1.webp";
+import house2 from "../assets/house2.webp";
+import house3 from "../assets/house3.webp";
+import apartment1 from "../assets/apartment1.webp";
+import apartment2 from "../assets/apartment2.webp";
+import apartment3 from "../assets/apartment3.webp";
+
 export interface IProperty {
   id: number;
   type: string;
@@ -15,7 +22,7 @@ export const properties: IProperty[] = [
     name: "Palm Harbor",
     location: "2699 Green Valley, Highland Lake, FL",
     price: 3440,
-    image: "src/assets/house1.webp",
+    image: house1,
     isFavorite: false,
   },
   {
@@ -24,7 +31,7 @@ export const properties: IProperty[] = [
     name: "St. Crystal",
     location: "210 US Highway, Highland Lake, FL",
     price: 6550,
-    image: "src/assets/house2.webp",
+    image: house2,
     isFavorite: false,
   },
   {
@@ -33,7 +40,7 @@ export const properties: IProperty[] = [
     name: "Faulkner Ave",
     location: "909 Woodland St, Michigan, IN",
     price: 4950,
-    image: "src/assets/house3.webp",
+    image: house3,
     isFavorite: false,
   },
   {
@@ -42,7 +49,7 @@ export const properties: IProperty[] = [
     name: "Tarpon Bay",
     location: "103 Lake Shores, Michigan, IN",
     price: 2140,
-    image: "src/assets/apartment1.webp",
+    image: apartment1,
     isFavorite: false,
   },
   {
@@ -51,7 +58,7 @@ export const properties: IProperty[] = [
     name: "Cove Red",
     location: "243 Curlew Road, Palm Harbor, TX",
     price: 1450,
-    image: "src/assets/apartment2.webp",
+    image: apartment2,
     isFavorite: false,
   },
   {
@@ -60,7 +67,7 @@ export const properties: IProperty[] = [
     name: "Beverly Springfield",
     location: "2821 Lake Sevilla, Palm Harbor, TX",
     price: 3850,
-    image: "src/assets/apartment3.webp",
+    image: apartment3,
     isFavorite: false,
   },
 ];

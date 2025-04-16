@@ -1,3 +1,7 @@
+import user1 from "../assets/user1.png";
+import user2 from "../assets/user2.png";
+import user3 from "../assets/user3.png";
+
 export interface ITestimonial {
   id: number;
   name: string;
@@ -14,7 +18,7 @@ export const testimonials: ITestimonial[] = [
     role: "Renter",
     quote:
       "Estatery is the platform I go to on almost a daily basis for 2nd home and vacation condo shopping, or to just look at dream homes in new areas. Thanks for fun home shopping and comparative analyzing, Estatery!",
-    image: "src/assets/user1.png",
+    image: user1,
     bgColor: "#DED1FA",
   },
   {
@@ -23,7 +27,7 @@ export const testimonials: ITestimonial[] = [
     role: "Renter",
     quote:
       "I check Estatery almost every day — whether I'm seriously house hunting or just daydreaming about future getaways. It makes exploring new locations and comparing properties incredibly easy and enjoyable.",
-    image: "src/assets/user2.png",
+    image: user2,
     bgColor: "#D6D8E5",
   },
   {
@@ -32,7 +36,7 @@ export const testimonials: ITestimonial[] = [
     role: "Renter",
     quote:
       "Estatery turns home shopping into a daily delight. Whether I'm planning for the future or just exploring what's out there, I always find something exciting and new.",
-    image: "src/assets/user3.png",
+    image: user3,
     bgColor: "#D6D8E5",
   },
 ];
