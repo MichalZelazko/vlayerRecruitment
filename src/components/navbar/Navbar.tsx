@@ -59,19 +59,19 @@ export default function Navbar() {
           <div className="w-full flex justify-end items-center">
             <BurgerMenu open={isOpenMenu} setOpen={setIsOpenMenu} />
           </div>
-          <ul className="flex flex-col gap-y-5 justify-self-center text-center">
+          <ul className="flex flex-col gap-y-5 w-full">
             {NAVBAR_LINKS.map((link) => (
               <li key={link.name}>
                 <a
                   href={link.href}
-                  className="text-base-1000 hover:text-secondary-500 font-medium transition-colors duration-300"
+                  className="text-base-1000 hover:text-secondary-500 text-2xl font-medium transition-colors duration-300"
                 >
                   {link.name}
                 </a>
               </li>
             ))}
           </ul>
-          <AuthButtons />
+          <AuthButtons className="w-full" />
         </div>
       </section>
     </>

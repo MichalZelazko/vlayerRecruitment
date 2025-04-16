@@ -11,8 +11,22 @@ export default function SectionHeading({
 }: ISectionHeadingProps) {
   return (
     <div className={`flex flex-col gap-y-4 ${className}`}>
-      <h2 className="text-3xl font-bold text-center">{title}</h2>
-      {subtitle && <p className="text-base-600">{subtitle}</p>}
+      <h2
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        className="text-3xl font-bold text-center"
+      >
+        {title}
+      </h2>
+      {subtitle && (
+        <p
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          className="text-base-600"
+        >
+          {subtitle}
+        </p>
+      )}
     </div>
   );
 }

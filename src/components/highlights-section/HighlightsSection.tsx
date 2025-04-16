@@ -31,7 +31,12 @@ export default function HighlightsSection() {
         {/* Desktop grid */}
         <div className="hidden lg:grid w-full px-8 grid-cols-3 gap-10">
           {filteredProperties.map((property) => (
-            <PropertyCard property={property} hasTypeTag key={property.id} />
+            <PropertyCard
+              property={property}
+              hasTypeTag
+              hasFavouriteButton
+              key={property.id}
+            />
           ))}
         </div>
       </div>

@@ -5,12 +5,14 @@ import SparklesIcon from "./SparklesIcon";
 interface IPropertyCardProps {
   property: IProperty;
   hasTypeTag?: boolean;
+  hasFavouriteButton?: boolean;
   className?: string;
 }
 
 export default function PropertyCard({
   property,
   hasTypeTag = false,
+  hasFavouriteButton = false,
   className,
 }: IPropertyCardProps) {
   return (
@@ -43,7 +45,7 @@ export default function PropertyCard({
             </p>
             <h4 className="text-xl font-semibold">{property.name}</h4>
           </div>
-          <FavouriteButton />
+          {hasFavouriteButton && <FavouriteButton />}
         </div>
         <p className="text-gray-600 text-left">{property.location}</p>
       </div>
