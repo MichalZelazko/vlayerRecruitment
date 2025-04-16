@@ -46,7 +46,7 @@ export default function HighlightsSection() {
         <div className="flex gap-4 pt-11">
           {filteredProperties.map((property) => (
             <div className="first:ml-8 last:pr-8" key={property.id}>
-              <PropertyCard property={property} hasTypeTag />
+              <PropertyCard property={property} hasTypeTag hasFavouriteButton />
             </div>
           ))}
         </div>
